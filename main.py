@@ -58,10 +58,11 @@ cb_lr = ReduceLROnPlateau(monitor='loss', factor=0.1, patience=5,
                           min_lr=0.00001)
 cb_tb = TensorBoard(log_dir="tensorboard", histogram_freq=0, write_graph=True,
                     write_images=True)
-
+#Train / Predict model
 # model.train(sample_list[1:], epochs=100, iterations=50, callbacks=[cb_lr, cb_tb])
 # model.predict(sample_list[0:1])
-#
+
+#Visualize data
 # from IPython.display import display
 # from PIL import Image
 # import numpy as np
